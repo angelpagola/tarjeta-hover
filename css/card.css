@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #cdfffc;
+  box-sizing: border-box;
+}
+
+.card {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  /*  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 280px 170px 80px;
+  grid-template-areas: "image" "text" "stats"; */
+  border-radius: 18px;
+  background: #ffe4e4;
+  box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 20px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+.card .card-image-1,
+.card .card-image-2,
+.card .card-image-3,
+.card .card-image-4 {
+  height: 280px;
+}
+.card .card-image-1 {
+  grid-area: image;
+  background: url("../img/img1.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card .card-image-2 {
+  grid-area: image;
+  background: url("../img/img2.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card .card-image-3 {
+  grid-area: image;
+  background: url("../img/img3.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card .card-image-4 {
+  grid-area: image;
+  background: url("../img/img4.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+.card .card-text {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card .card-text .date {
+  color: #ff577f;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+.card .card-text p {
+  color: grey;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+.card .card-text h2 {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 0;
+}
+.card .card-stats {
+  /* grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: $card-stats; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #ff577f;
+}
+.card .card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.card .card-stats .stat i {
+  font-weight: normal;
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
+/*# sourceMappingURL=card.css.map */

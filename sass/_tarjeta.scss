@@ -1,0 +1,90 @@
+.card {
+    font-family: $fuente-poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    /*  display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 280px 170px 80px;
+    grid-template-areas: "image" "text" "stats"; */
+    border-radius: 18px;
+    background: $card-text;
+    box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 20px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    .card-image-1,
+    .card-image-2,
+    .card-image-3,
+    .card-image-4 {
+        height: 280px;
+    }
+    .card-image-1 {
+        @include card-image("../img/img1.jpg");
+    }
+    .card-image-2 {
+        @include card-image("../img/img2.jpg");
+    }
+    .card-image-3 {
+        @include card-image("../img/img3.jpg");
+    }
+    .card-image-4 {
+        @include card-image("../img/img4.jpg");
+    }
+    .card-text {
+        padding: 20px;
+        box-sizing: border-box;
+        .date {
+            color: $card-stats;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+        }
+        p {
+            color: grey;
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 28px;
+            margin: 0;
+        }
+    }
+    .card-stats {
+        /* grid-area: stats;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background: $card-stats; */
+        @include alineacion-flex-center;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background: $card-stats;
+        .stat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            i {
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
