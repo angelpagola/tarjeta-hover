@@ -1,9 +1,9 @@
 @mixin card-image($url) {
-    grid-area: image;
-    background: url($url);
+    background-image: url($url);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
+    background-position: top;
 }
 
 @mixin alineacion-flex-center {

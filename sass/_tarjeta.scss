@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 280px;
+    width: 300px;
     /*  display: grid;
     grid-template-columns: 300px;
     grid-template-rows: 280px 170px 80px;
@@ -20,8 +20,10 @@
     .card-image-1,
     .card-image-2,
     .card-image-3,
-    .card-image-4 {
-        height: 280px;
+    .card-image-4,
+    .card-image-5,
+    .card-image-6 {
+        height: 250px;
     }
     .card-image-1 {
         @include card-image("../img/img1.jpg");
@@ -35,8 +37,14 @@
     .card-image-4 {
         @include card-image("../img/img4.jpg");
     }
+    .card-image-5 {
+        @include card-image("../img/img5.jpg");
+    }
+    .card-image-6 {
+        @include card-image("../img/face1.jpg");
+    }
     .card-text {
-        padding: 20px;
+        padding: 10px;
         box-sizing: border-box;
         .date {
             color: $card-stats;
@@ -86,5 +94,5 @@
 }
 
 .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }

@@ -1,14 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body {
-  width: 100vw;
+  width: 90%;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background: #cdfffc;
+  margin: auto;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.social__container {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  z-index: 1000;
+}
+.social__container .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.social__container .social i {
+  font-size: 20px;
+  color: #fff;
+}
+.social__container .facebook {
+  background-color: #3b5998;
+}
+.social__container .instagram {
+  background: linear-gradient(90deg, #4f5bd5, #5851db, #962fbf, #d62976, #fa7e1e, #feda75);
+}
+.social__container .youtube {
+  background-color: #c4302b;
+}
+.social__container .github {
+  background: #333;
+}
+.social__container .social:hover {
+  width: 80px;
 }
 
 .card {
@@ -16,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 280px;
+  width: 300px;
   /*  display: grid;
   grid-template-columns: 300px;
   grid-template-rows: 280px 170px 80px;
@@ -34,39 +74,55 @@ body {
 .card .card-image-1,
 .card .card-image-2,
 .card .card-image-3,
-.card .card-image-4 {
-  height: 280px;
+.card .card-image-4,
+.card .card-image-5,
+.card .card-image-6 {
+  height: 250px;
 }
 .card .card-image-1 {
-  grid-area: image;
-  background: url("../img/img1.jpg");
+  background-image: url("../img/img1.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  background-position: top;
 }
 .card .card-image-2 {
-  grid-area: image;
-  background: url("../img/img2.jpg");
+  background-image: url("../img/img2.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  background-position: top;
 }
 .card .card-image-3 {
-  grid-area: image;
-  background: url("../img/img3.jpg");
+  background-image: url("../img/img3.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  background-position: top;
 }
 .card .card-image-4 {
-  grid-area: image;
-  background: url("../img/img4.jpg");
+  background-image: url("../img/img4.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  background-position: top;
+}
+.card .card-image-5 {
+  background-image: url("../img/img5.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: top;
+}
+.card .card-image-6 {
+  background-image: url("../img/face1.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: top;
 }
 .card .card-text {
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
 }
 .card .card-text .date {
@@ -117,7 +173,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=card.css.map */
